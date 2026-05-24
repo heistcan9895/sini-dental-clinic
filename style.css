@@ -1029,7 +1029,7 @@ section:not(#hero) {
 }
 .journey-step.visible { opacity: 1; transform: translateY(0); }
 .step-right { flex-direction: row;        padding-right: calc(50% + 60px); }
-.step-left  { flex-direction: row-reverse; padding-left:  calc(50% + 60px); }
+.step-left  { flex-direction: row;        padding-left:  calc(50% + 60px); }
 .step-icon {
   flex-shrink: 0;
   width: 64px; height: 64px;
@@ -1562,8 +1562,10 @@ section:not(#hero) {
     transform: none !important;
     box-shadow: var(--shadow-sm);
   }
-  .step-right { padding-right: 0; }
-  .step-left  { padding-left: 0; }
+  .step-right,
+  .step-left {
+    padding: 1.3rem !important;
+  }
   .step-left .step-content { text-align: left; }
   .step-icon { width: 46px; height: 46px; border-radius: 13px; }
   .step-content { max-width: 100%; }
